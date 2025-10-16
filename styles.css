@@ -16,14 +16,15 @@
 .container {
     display: flex;
     width: 100%;
-
+    height: 100%;
 }
 
 .sidebar {
     flex-direction: column;
     padding-top: 30px;
     padding-left: 30px;
-    width: 19%;
+    width: 18rem;
+    height: auto;
     display: none;
 }
 
@@ -242,26 +243,36 @@ body {
         color: #282828;
     }
 
-    .sidebar-content {
+
+
+    .content-text {
+        justify-content: center;
+    }
+
+
+    .sidebar a {
+        overflow: hidden;
+    }
+
+    .sidebar-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        
+    }
+
+    .sidebar-content p {
         background-color: var(--dark-gray);
-        width: 85%;
-        height: 5%;
         border-radius: 10px;
         align-content: center;
         cursor: pointer;
         transition: background-color 0.5s;
-        font-size: 17.5px;
-    }
-
-    .content-text{
-        justify-content: center;
-    }
-
-    .sidebar-content:hover {
-        background-color: var(--darker-gray);
-    }
-
-    .sidebar a {
-        overflow: hidden;
+        font-size: 1rem;
+        width: 14.3rem;
+        height: 2.7rem;
+        padding: 0.2rem;
+        padding-left: 0.65rem;
     }
 }
